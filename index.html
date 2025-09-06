@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AhadxArt - Personal Porfolio</title>
+    <link rel="stylesheet" href="./index.css">
+    
+    <script src="script.js" defer></script>
+
+</head>
+<script>
+  window.addEventListener('load', () => {
+    const splash = document.getElementById('splash-screen');
+    setTimeout(() => {
+      splash.style.display = 'none';
+    }, 3000); // matches animation duration
+  });
+</script>
+
+<body>
+    <header class="main-header">
+        <div class="box02">
+            <h1 class="name">AhadxArt</h1>
+            <img src="./kk.png" alt="logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+        </nav>
+        <!-- <div class="header-content">
+            <h1>Welcome to AhadxArt</h1>
+            <p>Where creativity meets skill - showcasing the best in design andaristy.</p>
+        </div> -->
+    </header>
+    <div id="splash-screen">
+  <img src="./kk.png" alt="AhadxArt Logo" class="splash-logo">
+  <h1 class="splash-text">
+  Welcome to AhadxArt 
+</h1>
+
+</div>
+
+    <main>
+        <!--About section-->
+        <section id="about" class="about-section">
+            <h2 style="font-size: 3.5em;">Hi 👋 I'm AhadxArt</h2>
+            <p style="font-size: 1.5em; "> I specialize in crafting stunning website with a strong focus on usability and creativity. My journey is fueled by the desire to constantlylearn and improve.</p>
+        </section>
+        <!--Portfolio Section-->
+        <section id="Portfolio" class="Porfolio-section">
+            <h2 style="font-size: 4rem;">Porfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="./portfolio/Frame 2.png" alt="project 1">
+                <h3>Project 1</h3>
+                <p>A recipe app created on figma with different pages and interactions.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="./portfolio/SHOE AD-01.png" alt="project 2">
+                    <h3>Project 2</h3>
+                    <p>>A modern design of a nike shoe ad.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="./portfolio/Screenshot 2025-07-18 130849.png" alt="project 3">
+                    <h3>Project 3</h3>
+                    <p>A flyer desisgn of a gas plant. </p>
+                </div>
+            </div>
+        </section>
+        <!--Skills Section-->
+        <section id="skills" class="skills-section">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <div>
+                    <img src="./portfolio/coral draw image.png" alt="coral draw" class="skill-img">
+                </div>
+                <div>
+                    <img src="./portfolio/html png.png" alt="html" class="skill-img">
+                </div>
+                <div>
+                    <img src="./portfolio/css png.png" alt="css" class="skill-img">
+                </div>
+                <div>
+                    <img src="./portfolio/figma png image.png" alt="figma" class="skill-img">
+                </div>
+                <div>
+                    <img src="./portfolio/excel png.png" alt="excel" class="skill-img">
+                </div>
+            </div>
+            
+        </section>
+        <!--Conatact section-->
+        <section id="contact" class="contact-section">
+            <h2>Contact</h2>
+            <form action="https://formspree.io/f/xkgnqzbz" method="post">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required>
+                
+                <label for="EMAIL">EMAIL:</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" row="5" required></textarea>
+                <button type="submit">Send</button>
+                <div class="my contact">
+            <div>
+                <h1>Contact Me</h1>
+<p>Tel: +234 9167203816</p>
+<p>Email: ahadxart@gmail.com</p>
+<p>Address:</p>
+            <p>plot 3 titilola kelani street<br />
+    Sango Otta, Ogun State<br />
+  Nigeria<br />
+</p>
+
+            </form>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 AhadxArt. Designed by Abdulahad.</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>

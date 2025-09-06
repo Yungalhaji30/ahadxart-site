@@ -1,0 +1,326 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   
+    
+    /* line-height: 1.6; */
+}
+header{
+    /* background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 2rem 1rem;
+    text-align: center; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(104, 104, 104);
+    color: white;
+    padding: 6px 100px;
+}
+.name{
+    font-weight: bold;
+    font-size: 2.5em;
+}
+.nav-links{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    /* margin: 0 0 1rem; */
+}
+.nav-links li a{
+    color: white;
+    font-weight: 700;
+    font-size: 22px;
+    text-decoration: none;
+}
+.main-header .nav-link li{
+    margin: 0;
+}
+.main-header .nav-link a{
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+}
+.main-header .header-content{
+    margin-top: 2rem;
+}
+
+.main-header h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+section{
+    padding: 2rem 1rem;
+    text-align: center;
+}
+#about{
+    height: 80vh;
+    background-image: url('download\ \(1\).png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.about-section, .skills-secton{
+    padding: 2rem 1rem;
+    text-align: center;
+    background: #f4f4f4;
+}
+.portfolio-section{
+    padding: 2rem 1rem;
+    background: #fff;
+}
+
+.portfolio-item{
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+.portfolio-item img{
+    max-width: 100%;
+    border-radius: 8px;
+    width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+  display: block;
+  z-index: 1;
+  position: relative;
+}
+.portfolio-item h3{
+    margin: 0.5rem 0;
+}
+
+.skill-img{
+   width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+form{
+    max-width: 500px;
+    margin: 0 auto;
+}
+.fom label{
+    display: block;
+    margin: 0.5rem 0;
+}
+form input, form textarea, form button{
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+form button{
+    background: #2c3e50;
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer;
+    padding: 0.75rem;
+}
+form button:hover{
+    background: #34495e;
+}
+.main-footer{
+    text-align: center;
+    padding: 1rem;
+    background: #2c3e50;
+    color: #ecf0f1;
+}
+.nav-link a.active{
+    color: #3498db;
+    border-bottom: 2px solid #3498db;
+}
+html{
+    scroll-behavior: smooth;
+}
+img{
+    height: 4rem;
+    width: fit-content;
+
+}
+.box02{
+    display: flex;
+    align-items: center;
+}
+/* Mobile style */
+@media (max-width: 600px) {
+    .main-header, .about-section, .portfolio-grid, .skills-list{
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+     }
+     .portfolio-item img{
+        width: 100%;
+        height: auto;
+     }
+     .skill-img{
+        width: 80%;
+        height: auto;
+     }
+}
+/* Tablet styles */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Desktop styles */
+@media (min-width: 1025px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+   align-items: center;
+   gap: 60px;
+   margin-bottom: 20px;
+}
+
+/* Hover effect */
+.portfolio-item:hover img {
+  transform: scale(1.1); /* Zooms in by 10% */
+}
+.portfolio-item:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.portfolio-item h3,
+.portfolio-item p {
+  position: relative;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.8); /* Optional: adds contrast */
+  padding: 5px;
+}
+.portfolio-item p {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 5px;
+}
+/* Hover effect */
+.skills-list div:hover .skill-img {
+  transform: scale(1.1);
+}
+.skills-list div {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+}
+.skills-list div:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.skills-list div:hover {
+  box-shadow: 0 0 15px #00ffcc;
+}
+.portfolio-item.zoomed img {
+  transform: scale(1.1);
+}
+.portfolio-item:hover img,
+.portfolio-item:active img {
+  transform: scale(1.1);
+}
+h2 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Splash screen styles */
+#splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+    background: linear-gradient(to right, #00ffcc, #0066ff); /* ← Your new color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: fadeOut 2s ease-in-out forwards;
+  animation-delay: 2s;
+}
+
+.splash-logo {
+  width: 150px;
+  height: auto;
+  animation: zoomIn 1.5s ease-in-out;
+}
+
+/* Zoom effect */
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Fade out effect */
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.splash-text {
+  position: absolute;
+  bottom: 80px;
+  font-size: 2.5rem;
+  color: white;
+  text-align: center;
+  animation: fadeInText 2s ease-in-out;
+  font-family: 'Segoe UI', sans-serif;
+  letter-spacing: 2px;
+}
+
+/* Text fade-in animation */
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.splash-text {
+  animation: fadeInText 2s ease-in-out, pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
