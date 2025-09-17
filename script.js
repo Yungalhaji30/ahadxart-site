@@ -60,3 +60,8 @@ document.querySelectorAll('.portfolio-item').forEach(item => {
     item.classList.remove('zoomed');
   });
 });
+window.addEventListener('load',()=>{
+    const splash = document.getElementById('splash-screen');setTimeout(() =>{
+        splash.style.display = 'none';
+    }, 3000);
+});
