@@ -1,6 +1,107 @@
-<h1>About Me</h1>
-<p>Hello, and welcome to my corner of the web! I'm AKOBADA ABDULAHAD, a young Website developer with a passion for sport, designing and creating of arts. Over the years, I've developed a deep love for policial areas, and I enjoy listening to music.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Me - AhadxArt</title>
+  <link rel="stylesheet" href="style.css">
 
-<p>When I'm not working, you can find me playing FOOTBALL or watching LEGAL DRAMAS. I believe in continous growth and enjoy connecting with otherswho share my enthusiam for sports.</p>
+</head>
+<body>
+    <div class="overlay"></div>
 
-<p>This format gives a bit more depth while keeping it concise and engaging.</p>
+    <header>
+        <img src="./image/kk.png" alt="Ahadxart logo" class="logo">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfoilo.html">Portfoilo</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <main>
+    <section class="slideshow">
+      <h2>Gallery</h2>
+      <div class="slide-container">
+        <img src="./image/IMG-20250925-WA0006.jpg" class="slide" alt="AKOBADA 1">
+        <img src="./image/IMG-20250925-WA0005.jpg" class="slide" alt="AKOBADA 2">
+        <img src="./image/IMG-20250925-WA0004.jpg" class="slide" alt="AKOBADA 3">
+        <img src="./image/IMG-20250925-WA0003.jpg" alt="AKOBADA" class="slide">
+      </div>
+    </section>
+
+
+    <section class="bio-section"> 
+        <section class="about-section">
+      <h1>Hi 👋 I'm AhadxArt</h1>
+      
+      <p>
+        I’m a front-end designer based in Ogun State, Nigeria. I specialize in crafting stunning websites with a strong focus on usability, creativity, and clean design.
+      </p>
+    </section>
+        
+  <h2>My Story</h2>
+  <p>
+    My name is Abdulahad, but I’m known online as <strong>AhadxArt</strong>. I was born and raised in Lagos State, Nigeria, where creativity has always been part of my DNA. From sketching designs on paper to building digital layouts, I’ve always been drawn to the intersection of art and technology.
+  </p>
+
+  <p>
+    I started my journey in design by exploring tools like CorelDRAW and Figma, learning how to turn ideas into visuals. Over time, I expanded into front-end development, mastering HTML and CSS to bring those visuals to life on the web. My passion for clean design, responsive layouts, and user-friendly interfaces drives everything I create.
+  </p>
+
+  <p>
+    Beyond the screen, I’m someone who values growth, collaboration, and storytelling. I believe every project is an opportunity to learn something new and make something meaningful. Whether I’m working solo or with a team, I bring energy, precision, and a deep respect for the user experience.
+  </p>
+
+  <p>
+    Today, I’m building my portfolio to connect with clients, employers, and collaborators who value creativity and clarity. I’m open to freelance and full-time opportunities, and I’m excited to keep growing as a designer, developer, and creative thinker.
+  </p>
+
+  <p>
+    Welcome to my world—where design meets purpose, and every pixel tells a story.
+  </p>
+    <h3>Education & Qualifications</h3>
+  <p>
+    I hold a National Diploma in Electronic Computer Engineerig from Lagos State University(LASU), and also attended Aptech where I built a strong foundation in programming, data structures, and digital systems. During my studies, I developed a keen interest in web design and user experience, which led me to pursue additional certifications in front-end development and graphic design.
+  </p>
+
+  <p>
+    I’ve completed hands-on training in:
+    <ul>
+      <li>Front-End Web Development (HTML and CSS)</li>
+      <li>UI/UX Design using Figma and Adobe XD</li>
+      <li>Graphic Design with CorelDRAW</li>
+      <li>Microsoft Excel for data analysis and reporting</li>
+    </ul>
+  </p>
+
+  <p>
+    These qualifications have equipped me with both technical and creative skills to build websites that are not only functional but visually compelling.
+  </p>
+  <blockquote class="signature">
+  “Designing with vision. Building with precision.” — AhadxArt
+</blockquote>
+</section>
+  </main>
+  <a href="contact.html" class="contact-float">Contact Me</a>
+
+  <footer>
+  <p>&copy; 2025 AhadxArt. Designed by Abdulahad.</p>
+  <p><a href="contact.html" class="footer-contact">Reach out to me</a></p>
+</footer>>
+   <script>
+    const slides = document.querySelectorAll('.slide');
+    let current = 0;
+
+    setInterval(() => {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }, 3000);
+  </script>
+
+</body>
+</html>
