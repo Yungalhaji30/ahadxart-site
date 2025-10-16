@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard UI - AhadxArt</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <img src="backgroung.png"class="bg-img" alt="Background">
+  <header>
+    <img src="kk.png" alt="AhadxArt Logo" class="logo">
+    
+    <nav id="nav">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="dashboard-gallery">
+      <h1>Dashboard UI Designs</h1>
+      <p>Here are my dashboard interface concepts and layouts.</p>
+
+      <div class="gallery-grid">
+        <img src="./LOGO Icon.png" alt="Dashboard Design 1">
+        <img src="./shoe.png" alt="Dashboard Design 2">
+        <img src="./logo2.png" alt="Dashboard Design 3">
+        <img src="./kk.png" alt="Dashboard Design 3">
+        <img src="./screenshot_2025-07-18_130849.png" alt="Dashboard Design 3">
+        <!-- Add more images as needed -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AhadxArt. Designed by Abdulahad.</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
